@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+        <title>Administración</title>
+
+        <!--CDN´s-->
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- Iconografías Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/logo_naxu.png" alt="logo naxu" />
+                    <!--<img src="img/logo_naxu_movil.svg" alt="logo naxu movil" class="logo_movil">-->
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="indexx.html" target="_self">
+                            <img src="img/menu/logo_home_hover.svg" alt="home" />
+                            <p>Inicio</p>
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="#">
+                            <img src="img/menu/logo_recibonomina.svg" alt="recibos de nomina" />
+                            <p>Avisos administración</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="av_residentes.html" target="_self">
+                            <img src="img/menu/logo_creditos.svg" alt="residentes" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Avisos residentes</p>
+                        </a>
+                       <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="prestamos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Prestamos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="anticipos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Anticipos</p>
+                                </a>
+                            </li>
+                        </ul> -->
+                    </li>
+
+                    <li>
+                        <a href="minutas.html" target="_self">
+                            <img src="img/menu/logo_vacaciones.svg" alt="vacaciones" />
+                            <p>Minutas</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="agenda.html"  target="_self">
+                            <img src="img/menu/logo_seguros.svg" alt="seguros" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Agenda</p>
+                        </a>
+                       <!-- <ul class="collapse list-unstyled" id="segurosSubmenu">
+                            <li>
+                                <a href="seguros.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Mis seguros</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="adquirir_seguros.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Adquirir seguros</p>
+                                </a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="incidencias.html" target="_self">
+                            <img src="img/menu/logo_Beneficios.svg" alt="beneficios" />
+                            <p>Reporte de incidencias</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cuotas.html" target="_self">
+                            <img src="img/menu/logo_Asistencia.svg" alt="asistencia" />
+                            <p>Cuotas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="msgAdministrador.html"  aria-expanded="false">
+                            <img src="img/menu/logo_Contacto.svg" alt="Tienda virtual" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Mensajes administrador</p>
+                        </a>
+                        <!--<ul class="collapse list-unstyled" id="tiendaSubmenu">
+                            <li>
+                                <a href="productos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Productos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mis_pedidos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Mis pedidos</p>
+                                </a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="contacto.html" target="_self">
+                            <img src="img/menu/logo_Contacto.svg" alt="contacto" />
+                            <p>Contácto</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loging.html" target="self">
+                            <img src="img/menu/logo_salir.svg" alt="salir" />
+                            <p>Salir</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content">
+                <div class="container-fluid">
+                    <!--version movil-->
+                    <div class="row barraMovil">
+                        <div class="col-2 col-md-2 iconoAling">
+                            <button type="button" class="sidebarCollapse">
+                                <img src="img/menu/btn_menu.svg" alt="menu btn" />
+                            </button>
+                        </div>
+                        <div class="col-7 col-md-8"></div>
+                        <div class="col-2 col-md-2">
+                            <img src="img/companyname_loging.png" alt="Logo naxus" class="naxus_logo_movil" />
+                        </div>
+                    </div>
+
+                    <!--version desktop-->
+                    <div class="row barraDesktop">
+                        <div class="col-10 col-md-10">
+                            <h1 class="Bienv">¡Bienvenido!</h1>
+                            <p class="Usua">Luis Enrique Beltrán Rivera</p>
+                        </div>
+                        <div class="col-1 col-md-2">
+                            <img src="img/companyname_loging.png" alt="Logo de company" />
+                        </div>
+                    </div>
+
+                    <!--aquí inicia carrusel-->
+                <!-- inicia cuerpo del documento -->
+
+                
+
+                <div class="container-fluid">
+
+
+                    <div class="row">
+                        <!--modulo informacion personal-->
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="Noborder"><p class="titleSeg">ASUNTO DEL AVISO</p></th>
+                                        <th class="Noborder"><p class="titleSeg">TIPO</p></th>
+                                        <th class="Noborder"><p class="titleSeg">FECHA DE EMISIÓN</p></th>
+                                        <th class="Noborder"><p class="titleSeg">VISUALIZAR</p></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Registros de visitas al condominio.</p></td>
+                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
+                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">05-MAY-2022</p></td>
+                                        <td data-column="Descargar" class="NoRightBorder">
+                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Registros de visitas al condominio.</p></td>
+                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
+                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">05-MAY-2022</p></td>
+                                        <td data-column="Descargar" class="NoRightBorder">
+                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Registros de visitas al condominio.</p></td>
+                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
+                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">05-MAY-2022</p></td>
+                                        <td data-column="Descargar" class="NoRightBorder">
+                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".sidebarCollapse").on("click", function () {
+                    $("#sidebar").toggleClass("active");
+                });
+            });
+        </script>
+    </body>
+</html>
