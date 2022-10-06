@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-        <title>Notificame | Inicio</title>
+        <title>Reporte de incidencias</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/styles.css" />
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -19,9 +19,10 @@
                 <div class="sidebar-header">
                     <img src="img/logo_naxu.png" alt="logo naxu" />
                 </div>
+
                 <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#">
+                    <li>
+                        <a href="indexx.html" target="_self">
                             <img src="img/menu/logo_home_hover.svg" alt="home" />
                             <p>Inicio</p>
                         </a>
@@ -35,21 +36,21 @@
                     </li>
 
                     <li>
-                        <a href="av_residentes.html"  target="_self">
+                        <a href="av_residentes.html" target="_self">
                             <img src="img/menu/logo_creditos.svg" alt="residentes" />
                             <i class="fa fa-chevron-down"></i>
                             <p>Avisos residentes</p>
-                        </a>               
+                        </a>
                     </li>
 
                     <li>
-                        <a href="minutas.html">
+                        <a href="minutas.html" target="_self">
                             <img src="img/menu/logo_vacaciones.svg" alt="vacaciones" />
                             <p>Minutas</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="incidencias.html">
+                    <li class="active">
+                        <a href="#">
                             <img src="img/menu/logo_Beneficios.svg" alt="beneficios" />
                             <p>Reporte de incidencias</p>
                         </a>
@@ -59,7 +60,6 @@
                             <p>Salir</p>
                         </a>
                     </li>
-                   
                 </ul>
             </nav>
             <div id="content">
@@ -78,10 +78,10 @@
                     <div class="row barraDesktop">
                         <div class="col-10 col-md-10">
                             <h1 class="Bienv">¡Bienvenido!</h1>
-                            <p class="Usua">Luis Enrique Beltrán Rivera (Administrador)</p>
+                            <p class="Usua">Luis Enrique Beltrán Rivera</p>
                         </div>
                         <div class="col-1 col-md-2">
-                            <img src="img/companyname_loging.png" alt="Logo de company" class="LogoComName" />
+                            <img src="img/companyname_loging.png" alt="Logo de company" />
                         </div>
                     </div>
 
@@ -92,6 +92,80 @@
                         </div>
                     </div>
                 </div>
+                <div class="container-fluid contacto">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="spaCbzSeg">
+                                <h3 class="encabz">Reportar una incidencia</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row DetalleProductContact">
+                       
+                            <div class="col-12 col-md-2 col-lg-1">
+                            </div>
+                            <div class="col-12 col-md-8 col-lg-10">
+                                <h3>
+                                   Tienes alguna queja o deseas notificar alguna incidencia
+                                </h3>
+                                <p>
+                                   Hazlo a traves de nuestro formulario
+                                </p>
+                                
+                                <form role="form">
+                                    <div class="form-group">
+                                        
+                                        <label for="exampleInputEmail1">
+                                            Asunto
+                                        </label>
+                                        <input type="name" class="form-control" id="asunto" />
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" rows="10"></textarea>
+                                    </div>
+                                    
+                                   <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6"></div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <a href="#"  class="btn btn-block btn-lg btn-primary">Publicar</a>
+                                    </div>
+                                </div>
+                                    
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-2 col-lg-1">
+                            </div>
+                        
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid fot">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg-2 cjadress">
+                    <address>
+                        <strong>Contácto</strong><br />
+                        <abbr title="Telefono">Tel:</abbr> 800.234.5674xxx<br />
+                        Mail:info@mail.com.mx <br />
+                        Administra@2022
+                    </address>
+                </div>
+                <div class="col-6 col-md-2 col-lg-2">
+                </div>
+                <div class="col-12 col-md-7 col-lg-8">
+                    <p>
+                        Para mas información este es nuestros metodos de contacto.
+                    </p>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

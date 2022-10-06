@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-        <title>Notificame | Administración</title>
+        <title>Minutas</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/styles.css" />
@@ -16,11 +16,9 @@
 
     <body>
         <div class="wrapper">
-           
             <nav id="sidebar">
                 <div class="sidebar-header">
                     <img src="img/logo_naxu.png" alt="logo naxu" />
-                    
                 </div>
 
                 <ul class="list-unstyled components">
@@ -31,8 +29,8 @@
                         </a>
                     </li>
 
-                    <li class="active">
-                        <a href="#">
+                    <li>
+                        <a href="av_adminisracion.html" target="_self">
                             <img src="img/menu/logo_recibonomina.svg" alt="recibos de nomina" />
                             <p>Avisos administración</p>
                         </a>
@@ -40,13 +38,14 @@
 
                     <li>
                         <a href="av_residentes.html" target="_self">
-                            <img src="img/menu/logo_creditos.svg" alt="residentes" />
+                            <img src="img/menu/logo_creditos.svg" alt="creditos" />
                             <i class="fa fa-chevron-down"></i>
                             <p>Avisos residentes</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="minutas.html">
+
+                    <li class="active">
+                        <a href="#">
                             <img src="img/menu/logo_vacaciones.svg" alt="vacaciones" />
                             <p>Minutas</p>
                         </a>
@@ -64,7 +63,6 @@
                     </li>
                 </ul>
             </nav>
-
             <div id="content">
                 <div class="container-fluid">
                     <div class="row barraMovil">
@@ -81,22 +79,57 @@
                     <div class="row barraDesktop">
                         <div class="col-10 col-md-10">
                             <h1 class="Bienv">¡Bienvenido!</h1>
-                            <p class="Usua">Luis Enrique Beltrán Rivera (Administrador)</p>
+                            <p class="Usua">Luis Enrique Beltrán Rivera</p>
                         </div>
                         <div class="col-1 col-md-2">
                             <img src="img/companyname_loging.png" alt="Logo de company" />
                         </div>
                     </div>
-                <!-- inicia cuerpo del documento -->
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="encabz01">Minutas y acuerdos importantes</h3>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="carousel slide" id="carousel-541591">
+                                            <ol class="carousel-indicators">
+                                                <li data-slide-to="0" data-target="#carousel-541591" class="active">
+                                                </li>
+                                                <li data-slide-to="1" data-target="#carousel-541591">
+                                                </li>
+                                                <li data-slide-to="2" data-target="#carousel-541591">
+                                                </li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" alt="slider Contacto 01" src="img/slider_contacto.png" />
+                                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" alt="slider Contacto 01" src="img/slider_contacto01.png" />
+                                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" alt="slider Contacto 01" src="img/slider_contacto02.png" />
+                                                  
+                                                </div>
+                                            </div> <a class="carousel-control-prev" href="#carousel-541591" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-541591" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                </div>
                 <div class="container-fluid">
-
-
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th class="Noborder"><p class="titleSeg">ASUNTO DEL AVISO</p></th>
+                                        <th class="Noborder"><p class="titleSeg">ASUNTO DE LA MINUTA</p></th>
                                         <th class="Noborder"><p class="titleSeg">TIPO</p></th>
                                         <th class="Noborder"><p class="titleSeg">FECHA DE EMISIÓN</p></th>
                                         <th class="Noborder"><p class="titleSeg">VISUALIZAR</p></th>
@@ -131,78 +164,10 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <br>
-                            <a id="modal-otroseg02" href="#modal-container-otroseg01" data-toggle="modal" role="button" class="btn btn-primary Benef">Crear un aviso nuevo</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="modal-container-otroseg01" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content AdqOtroSegModal01">
-                    <div class="row DetalleProductContact">
-                       
-                        <div class="col-12 col-md-2 col-lg-1">
-                        </div>
-                        <div class="col-12 col-md-8 col-lg-10">
-                            <h3>
-                                Publica un aviso para todos los cóndominios
-                            </h3>
-                            <p>
-                               Recuerda que tambien puedes adjuntar un documento
-                            </p>
-                           
-                            <form role="form">
-                                <div class="form-group">
-                                    
-                                    <label for="exampleInputEmail1">
-                                        Asunto
-                                    </label>
-                                    <input type="name" class="form-control" id="asunto" />
-                                </div>
-                            
-                                <div class="form-group">
-                                    
-                                    <label for="exampleInputEmail1">
-                                        Tipo de aviso
-                                    </label>
-                                    <input type="name" class="form-control" id="tipoAviso" />
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Mensaje</label>
-                                    <textarea class="form-control" id="mensaje" rows="10"></textarea>
-                                </div>
-                                
-                               <div class="row">
-                                <div class="col-12 col-md-6 col-lg-6"></div>
-
-                                <div>
-                                    <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                </div>
-
-                                <div class="col-12 col-md-6 col-lg-6">
-                                    <a href="#"  class="btn btn-block btn-lg btn-primary">Publicar</a>
-                                </div>
-                            </div>
-                                
-                            </form>
-                        </div>
-                        <div class="col-12 col-md-2 col-lg-1">
-                        </div>
-                    
-
-                </div>
-
-                    <div class="modal-footer">     
-                        <a href="#" data-dismiss="modal">Cancelar</a>
-                        
-                    </div>
-                </div>
-                
-            </div>
-            
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
