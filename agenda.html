@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+        <title>Minutas</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/logo_naxu.png" alt="logo naxu" />
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="indexx.html" target="_self">
+                            <img src="img/menu/logo_home_hover.svg" alt="home" />
+                            <p>Inicio</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="av_adminisracion.html" target="_self">
+                            <img src="img/menu/logo_recibonomina.svg" alt="recibos de nomina" />
+                            <p>Avisos administración</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="av_residentes.html" target="_self">
+                            <img src="img/menu/logo_creditos.svg" alt="creditos" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Avisos residentes</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/menu/logo_vacaciones.svg" alt="vacaciones" />
+                            <p>Minutas</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="agenda.html">
+                            <img src="img/menu/logo_agenda.svg" alt="vacaciones" />
+                            <p>Agenda</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="incidencias.html">
+                            <img src="img/menu/logo_Beneficios.svg" alt="beneficios" />
+                            <p>Reporte de incidencias</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loging.html" target="self">
+                            <p>Salir</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="content">
+                <div class="container-fluid">
+                    <div class="row barraMovil">
+                        <div class="col-2 col-md-2 iconoAling">
+                            <button type="button" class="sidebarCollapse">
+                                <img src="img/menu/btn_menu.svg" alt="menu btn" />
+                            </button>
+                        </div>
+                        <div class="col-7 col-md-8"></div>
+                        <div class="col-2 col-md-2">
+                            <img src="img/companyname_loging.png" alt="Logo naxus" class="naxus_logo_movil" />
+                        </div>
+                    </div>
+                    <div class="row barraDesktop">
+                        <div class="col-10 col-md-10">
+                            <h1 class="Bienv">¡Bienvenido!</h1>
+                            <p class="Usua">Luis Enrique Beltrán Rivera</p>
+                        </div>
+                        <div class="col-1 col-md-2">
+                            <img src="img/companyname_loging.png" alt="Logo de company" />
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-8 my-4">
+                                <h3 class="encabz01">Reserva alguna de las amenidades que tenemos disponibles</h3>
+                                <div class="infoUsua">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <label>Fecha de inicio</label>
+                                                    <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control" />
+                                                </div>
+    
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <label>Fecha de termino</label>
+                                                    <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+    
+    
+                                        <div class="col-12">
+                                            <select name="mes" class="form-control">
+                                                <option value="0">Tipo de amenidad</option>
+                                                <option value="1">Kiosko</option>
+                                                <option value="2">Gimnasio</option>
+                                                <option value="3">Alberca</option>
+                                                <option value="4">Terraza</option>
+                                                <option value="5">Cancha de Futbol</option>
+                                                <option value="6">Cancha de basquetball</option>
+                                            </select>
+                                        </div>
+    
+                                        <a href="#" class="btn btn-block btn-primary enlace">Reservar</a>
+                                    </form>
+                                </div>
+    
+                                <h3 class="encabz01">Historial de reservaciones</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="Noborder"><p class="titleSeg">TIPO DE AMENIDAD</p></th>
+                                            <th class="Noborder"><p class="titleSeg">TIPO</p></th>
+                                            <th class="Noborder"><p class="titleSeg">FECHA DE EMISIÓN</p></th>
+                                            <th class="Noborder"><p class="titleSeg">VISUALIZAR</p></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Registros de visitas al condominio.</p></td>
+                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
+                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">05-MAY-2022</p></td>
+                                            <td data-column="Descargar" class="NoRightBorder">
+                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Registros de visitas al condominio.</p></td>
+                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
+                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">05-MAY-2022</p></td>
+                                            <td data-column="Descargar" class="NoRightBorder">
+                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Registros de visitas al condominio.</p></td>
+                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
+                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">05-MAY-2022</p></td>
+                                            <td data-column="Descargar" class="NoRightBorder">
+                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+    
+                            <div class="col-12 col-md-4 col-lg-4 mt-5">
+                                <div class="OtroSeg pt-4">
+                                    <img alt="Seguro Educativo" src="img/img_deportes.jpg" />
+                                        <div class="OtroSegInfo">
+                                            <h3 class="OtroSegTitle">
+                                                15% Descuento en Sport City
+                                            </h3>
+                                            <p class="OtroSegDesc"> 
+                                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum.
+                                            </p> 
+                                            <p class="OtroSegCod">Código: <span>ABC123</span></p>
+                                            <p class="OtroSegDate">Valido hasta el 12 de Julio de 2020</p>
+                                            <a id="modal-otroseg02" href="#modal-container-otroseg02" data-toggle="modal" role="button" class="btn btn-primary Benef02">MÁS DETALLE</a>
+                                        </div>
+                                   
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                            
+                        </div>
+
+
+                       
+                
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".sidebarCollapse").on("click", function () {
+                    $("#sidebar").toggleClass("active");
+                });
+            });
+        </script>
+    </body>
+</html>
