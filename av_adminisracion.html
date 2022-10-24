@@ -96,95 +96,21 @@
                 <!-- inicia cuerpo del documento -->
                 <div class="container-fluid">
 
-
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <button type="button" class="btn btn-block btn-lg btn-primary" id="btnGenerate">Recargar comentarios</button>
+                    </div><br><br>
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
-                            <table>
+                            <table id="comments" class="sortable">
                                 <thead>
                                     <tr>
                                         <th class="Noborder"><p class="titleSeg">ASUNTO DEL AVISO</p></th>
                                         <th class="Noborder"><p class="titleSeg">TIPO</p></th>
-                                        <th class="Noborder"><p class="titleSeg">FECHA DE EMISIÓN</p></th>
+                                        <th class="Noborder"><p class="titleSeg">MENSAJE</p></th>
                                         <th class="Noborder"><p class="titleSeg">VISUALIZAR</p></th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Registros de visitas al condominio.</p></td>
-                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
-                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">05-MAY-2022</p></td>
-                                        <td data-column="Descargar" class="NoRightBorder">
-                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Junta semanal</p></td>
-                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
-                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">08-MAY-2022</p></td>
-                                        <td data-column="Descargar" class="NoRightBorder">
-                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Acuerdos de reunión de vecinos</p></td>
-                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
-                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">12-MAY-2022</p></td>
-                                        <td data-column="Descargar" class="NoRightBorder">
-                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Pago de cuota a limpieza</p></td>
-                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
-                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">20-JUL-2022</p></td>
-                                        <td data-column="Descargar" class="NoRightBorder">
-                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Servicios de poda y limpieza</p></td>
-                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
-                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">25-JULI-2022</p></td>
-                                        <td data-column="Descargar" class="NoRightBorder">
-                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                        </td>
-                                    </tr>
-                                   
-                                    <tr>
-                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Acuerdos sobre tratamiento de mascotas</p></td>
-                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
-                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">18-AGOST-2022</p></td>
-                                        <td data-column="Descargar" class="NoRightBorder">
-                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Cooperación para la poda vecinal </p></td>
-                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
-                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">20-AGOST-2022</p></td>
-                                        <td data-column="Descargar" class="NoRightBorder">
-                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Acuerdos de reunión de vecinos</p></td>
-                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
-                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">01-OCT-2022</p></td>
-                                        <td data-column="Descargar" class="NoRightBorder">
-                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Acuerdos para el pago de seguridad</p></td>
-                                        <td data-column="Seguro" class="RightBorder"><p class="itemSeg">ACUERDO</p></td>
-                                        <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">15-OCT-2022</p></td>
-                                        <td data-column="Descargar" class="NoRightBorder">
-                                            <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                        </td>
-                                    </tr>
-
+                                <tbody id="tbody">
                                 </tbody>
                             </table>
                             <br>
@@ -209,19 +135,19 @@
                                Recuerda que tambien puedes adjuntar un documento
                             </p>
                            
-                            <form role="form">
+                            <form role="form1" action="av_adminisracion.html" method="POST" id="form1">
                                 <div class="form-group">
                                     
                                     <label for="exampleInputEmail1">
                                         Asunto
                                     </label>
-                                    <input type="name" class="form-control" id="asunto" />
+                                    <input type="name" class="form-control" id="notification" name="notification" />
                                 </div>
                             
                                 <div class="form-group">
                                     
                                    
-                                    <select name="acuerdo" class="form-control">
+                                    <select name="acuerdo" class="form-control" id="type" name="type">
                                         <option value="0">Tipo de aviso</option>
                                         <option value="1">Acuerdo</option>
                                         <option value="2">Minuta</option>
@@ -233,7 +159,7 @@
 
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Mensaje</label>
-                                    <textarea class="form-control" id="mensaje" rows="10"></textarea>
+                                    <textarea class="form-control" id="message" rows="10" name="message"></textarea>
                                 </div>
                                 
                                <div class="row">
@@ -244,10 +170,9 @@
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-6">
-                                    <a href="#"  class="btn btn-block btn-lg btn-primary">Publicar</a>
+                                    <button type="button" class="btn btn-block btn-lg btn-primary" id="btnRegisterComment">Publicar</button>
                                 </div>
                                 </div>
-                                
                             </form>
                         </div>
                         <div class="col-12 col-md-2 col-lg-1">
@@ -278,3 +203,51 @@
         </script>
     </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+       $('#btnRegisterComment').click(function(){
+           var datos = $('#form1').serialize();
+           $.ajax({
+               type: "POST",
+               url: "createNotification.php",
+               data: datos,
+               success: function(data){
+                   if(data === '' ){
+                    alert('REGISTRO NO EXITOSO');
+                   }
+               } 
+           });  
+       });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('#btnGenerate').click(function(){
+            $.ajax({
+               type: "POST",
+               url: "allComents.php",
+               dataType: "json",
+               success: function(data){
+
+                
+                let tableBody = document.getElementById('tbody');
+
+                var table = $('#comments').DataTable();
+
+                table.clear();
+                table.destroy();
+                           
+                for (var key in data) {
+                    $("#comments").append('<tr>' + 
+                    '<td data-column="Nombre" class="RightBorder"><p class="itemSeg">' + data[key].notification + '</td>'+
+                    '<td data-column="Seguro" class="RightBorder">' + data[key].type + '</td>'+
+                    '<td data-column="Seguro" class="RightBorder">' + data[key].message + '</td>'+ '</tr>');
+                }              
+               } 
+           }); 
+        });
+
+    });
+</script>
