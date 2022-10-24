@@ -226,6 +226,28 @@
 </script>
 
 <script>
+
+$(window).on("load", function(){
+            $.ajax({
+               type: "POST",
+               url: "allComents.php",
+               dataType: "json",
+               success: function(data){
+                let tableBody = document.getElementById('tbody');
+                var table = $('#comments').DataTable();
+                table.clear();
+                table.destroy();      
+                for (var key in data) {
+                    $("#comments").append('<tr>' + 
+                    '<td data-column="Nombre" class="RightBorder"><p class="itemSeg">' + data[key].notification + '</td>'+
+                    '<td data-column="Seguro" class="RightBorder">' + data[key].type + '</td>'+
+                    '<td data-column="Seguro" class="RightBorder">' + data[key].message + '</td>'+ '</tr>');
+                }              
+               } 
+           }); 
+    });
+
+
     $(document).ready(function(){
         $('#btnGenerate').click(function(){
             $.ajax({
