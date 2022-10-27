@@ -10,6 +10,10 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/sorttable.js"></script>
+        <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet"/>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     </head>
@@ -95,115 +99,53 @@
                             <div class="col-12 col-md-8 col-lg-8 my-4">
                                 <h3 class="encabz01">Reserva alguna de las amenidades que tenemos disponibles</h3>
                                 <div class="infoUsua">
-                                    <form>
+                                    <form role="form2" action="agenda.html" method="POST" id="form2">
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-12 col-md-6 col-lg-6">
-                                                    <label>Fecha de inicio</label>
-                                                    <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control" />
+                                                    <label>Fecha de emisión</label>
+                                                    <input type="date" name="bday" id="bday" max="3000-12-31" min="1000-01-01" class="form-control" />
                                                 </div>
     
-                                                <div class="col-12 col-md-6 col-lg-6">
-                                                    <label>Fecha de termino</label>
-                                                    <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control" />
-                                                </div>
+                                                
                                             </div>
                                         </div>
     
     
                                         <div class="col-12">
-                                            <select name="mes" class="form-control">
+                                            <select name="amenidad" class="form-control" id="amenidad">
                                                 <option value="0">Tipo de amenidad</option>
-                                                <option value="1">Kiosko</option>
-                                                <option value="2">Gimnasio</option>
-                                                <option value="3">Alberca</option>
-                                                <option value="4">Terraza</option>
-                                                <option value="5">Cancha de Futbol</option>
-                                                <option value="6">Cancha de basquetball</option>
+                                                <option value="Kiosko">Kiosko</option>
+                                                <option value="Gimnasio">Gimnasio</option>
+                                                <option value="Alberca">Alberca</option>
+                                                <option value="Terraza">Terraza</option>
+                                                <option value="Cancha de futbol">Cancha de Futbol</option>
+                                                <option value="Cancha de basquet">Cancha de basquetball</option>
                                             </select>
                                         </div>
-    
-                                        <a href="#" class="btn btn-block btn-primary enlace">Reservar</a>
+
+                                        <div class="col-12">
+                                            <select name="evento" class="form-control" id="evento">
+                                                <option value="0">Tipo de evento</option>
+                                                <option value="Evento privado">Evento privado</option>
+                                                <option value="Evento publico">Evento publico</option>
+                                                <option value="Evento comunitario">Evento comunitario</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="btn btn-block btn-primary enlace" id="btnRegisterEvent">Reservar</button>
                                     </form>
                                 </div>
     
                                 <h3 class="encabz01">Historial de reservaciones</h3>
-                                <table>
+                                <table id="reservaciones" class="sortable">
                                     <thead>
                                         <tr>
                                             <th class="Noborder"><p class="titleSeg">TIPO DE AMENIDAD</p></th>
                                             <th class="Noborder"><p class="titleSeg">TIPO</p></th>
                                             <th class="Noborder"><p class="titleSeg">FECHA DE EMISIÓN</p></th>
-                                            <th class="Noborder"><p class="titleSeg">VISUALIZAR</p></th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Salón de eventos</p></td>
-                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Evento privado</p></td>
-                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">05-MAY-2022</p></td>
-                                            <td data-column="Descargar" class="NoRightBorder">
-                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                            </td>
-                                        </tr>
-    
-                                        <tr>
-                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Gimnasio</p></td>
-                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Evento comunitario</p></td>
-                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">09-MAY-2022</p></td>
-                                            <td data-column="Descargar" class="NoRightBorder">
-                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                            </td>
-                                        </tr>
-    
-                                        <tr>
-                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Palapa</p></td>
-                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Evento privado</p></td>
-                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">11-JUN-2022</p></td>
-                                            <td data-column="Descargar" class="NoRightBorder">
-                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Salón de eventos</p></td>
-                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Evento comunitario</p></td>
-                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">11-JUL-2022</p></td>
-                                            <td data-column="Descargar" class="NoRightBorder">
-                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Alberca</p></td>
-                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Evento privado</p></td>
-                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">11-AGO-2022</p></td>
-                                            <td data-column="Descargar" class="NoRightBorder">
-                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Terraza</p></td>
-                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Evento comunitario</p></td>
-                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">13-AGO-2022</p></td>
-                                            <td data-column="Descargar" class="NoRightBorder">
-                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Cancha de futbol</p></td>
-                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Evento privado</p></td>
-                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">11-SEPT-2022</p></td>
-                                            <td data-column="Descargar" class="NoRightBorder">
-                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Cancha de basquet</p></td>
-                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Evento privado</p></td>
-                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">28-SEPT-2022</p></td>
-                                            <td data-column="Descargar" class="NoRightBorder">
-                                                <a href="#"><img src="img/iconopdf.svg" alt="img pdf descragable" /></a>
-                                            </td>
-                                        </tr>
+                                    <tbody id="tbody">
                                     </tbody>
                                 </table>
                             </div>
@@ -245,7 +187,6 @@
                 
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
@@ -258,3 +199,48 @@
         </script>
     </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+       $('#btnRegisterEvent').click(function(){
+           var datos = $('#form2').serialize();
+           $.ajax({
+               type: "POST",
+               url: "createEvent.php",
+               data: datos,
+               success: function(data){
+                   if(data === '' ){
+                    alert('REGISTRO NO EXITOSO');
+                   } else {
+                    getAllComents();
+                   }
+               } 
+           });  
+       });
+    });
+</script>
+
+<script>
+
+$(window).on("load", function(){
+            getAllComents(); 
+    });
+
+    function getAllComents() {
+        $.ajax({
+               type: "POST",
+               url: "allEvents.php",
+               dataType: "json",
+               success: function(data){
+                let tableBody = document.getElementById('tbody');
+                $('#reservaciones > tbody').empty();  
+                for (var key in data) {
+                    $("#reservaciones").append('<tr>' + 
+                    '<td data-column="Nombre" class="RightBorder"><p class="itemSeg">' + data[key].bday + '</td>'+
+                    '<td data-column="Seguro" class="RightBorder">' + data[key].amenidad + '</td>'+
+                    '<td data-column="Seguro" class="RightBorder">' + data[key].evento + '</td>'+ '</tr>');
+                }              
+               } 
+           });
+    }
+</script>
