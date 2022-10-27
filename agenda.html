@@ -236,9 +236,9 @@ $(window).on("load", function(){
                 $('#reservaciones > tbody').empty();  
                 for (var key in data) {
                     $("#reservaciones").append('<tr>' + 
-                    '<td data-column="Nombre" class="RightBorder"><p class="itemSeg">' + data[key].bday + '</td>'+
-                    '<td data-column="Seguro" class="RightBorder">' + data[key].amenidad + '</td>'+
-                    '<td data-column="Seguro" class="RightBorder">' + data[key].evento + '</td>'+ '</tr>');
+                    '<td data-column="Nombre" class="RightBorder"><p class="itemSeg">' + data[key].amenidad + '</td>'+
+                    '<td data-column="Seguro" class="RightBorder">' + data[key].evento + '</td>'+
+                    '<td data-column="Seguro" class="RightBorder">' + data[key].bday + '</td>'+ '</tr>');
                 }              
                } 
            });
