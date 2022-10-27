@@ -99,10 +99,6 @@
                     </div>
                 <!-- inicia cuerpo del documento -->
                 <div class="container-fluid">
-
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <button type="button" class="btn btn-block btn-lg btn-primary" id="btnGenerate">Recargar comentarios</button>
-                    </div><br><br>
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
                             <table id="comments" class="sortable">
@@ -174,7 +170,7 @@
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-6">
-                                    <button type="button" class="btn btn-block btn-lg btn-primary" id="btnRegisterComment">Publicar</button>
+                                    <button type="button" class="btn btn-block btn-lg btn-primary" id="btnRegisterComment" data-dismiss="modal">Publicar</button>
                                 </div>
                                 </div>
                             </form>
@@ -218,6 +214,8 @@
                success: function(data){
                    if(data === '' ){
                     alert('REGISTRO NO EXITOSO');
+                   } else {
+                    getAllComents();
                    }
                } 
            });  
@@ -247,23 +245,14 @@ $(window).on("load", function(){
            }); 
     });
 
-
-    $(document).ready(function(){
-        $('#btnGenerate').click(function(){
-            $.ajax({
+    function getAllComents() {
+        $.ajax({
                type: "POST",
                url: "allComents.php",
                dataType: "json",
                success: function(data){
-
-                
                 let tableBody = document.getElementById('tbody');
-
-                var table = $('#comments').DataTable();
-
-                table.clear();
-                table.destroy();
-                           
+                $('#comments > tbody').empty();  
                 for (var key in data) {
                     $("#comments").append('<tr>' + 
                     '<td data-column="Nombre" class="RightBorder"><p class="itemSeg">' + data[key].notification + '</td>'+
@@ -271,8 +260,6 @@ $(window).on("load", function(){
                     '<td data-column="Seguro" class="RightBorder">' + data[key].message + '</td>'+ '</tr>');
                 }              
                } 
-           }); 
-        });
-
-    });
+           });
+    }
 </script>
