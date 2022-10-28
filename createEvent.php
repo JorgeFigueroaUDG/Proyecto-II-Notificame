@@ -1,8 +1,8 @@
 <?php
 //mysql://bab1268ab5e278:ce1a7eef@us-cdbr-east-06.cleardb.net/heroku_e021dfd5e5644c0?reconnect=true
 //http://localhost/plb/NotificameProyectoVII/loging.html
-//$conexion= new mysqli('us-cdbr-east-06.cleardb.net','bab1268ab5e278','ce1a7eef','heroku_e021dfd5e5644c0');
-$conexion = mysqli_connect('localhost','root','','commentsadmin');
+$conexion= new mysqli('us-cdbr-east-06.cleardb.net','bab1268ab5e278','ce1a7eef','heroku_e021dfd5e5644c0');
+//$conexion = mysqli_connect('localhost','root','','commentsadmin');
 	$bday = $_POST['bday'];
     $amenidad = $_POST['amenidad'];
 	$evento = $_POST['evento'];

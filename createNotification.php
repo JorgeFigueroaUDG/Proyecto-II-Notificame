@@ -1,7 +1,7 @@
 <?php
 //mysql://bab1268ab5e278:ce1a7eef@us-cdbr-east-06.cleardb.net/heroku_e021dfd5e5644c0?reconnect=true
-//$conexion= new mysqli('us-cdbr-east-06.cleardb.net','bab1268ab5e278','ce1a7eef','heroku_e021dfd5e5644c0');
-$conexion = mysqli_connect('localhost','root','','commentsadmin');
+$conexion= new mysqli('us-cdbr-east-06.cleardb.net','bab1268ab5e278','ce1a7eef','heroku_e021dfd5e5644c0');
+//$conexion = mysqli_connect('localhost','root','','commentsadmin');
 	$notification=$_POST['notification'];
     $type = $_POST['type'];
 	$message=$_POST['message'];
